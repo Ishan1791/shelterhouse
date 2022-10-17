@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--Import Google Icon Font-->
+  <link  rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <title>Shelters</title>
+
+  <style>
+  .navbar-fixed nav {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+
+  .footer-fixed footer {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  .footer-fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  footer ul.justify {
+    text-align: center;
+    display: table;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  footer ul.justify li {
+    margin-left: auto;
+    margin-right: auto;
+    //width: 138px; // 3 ICONS
+		width: 100px; // 4 ICONS
+		//width: 82px; // 5 ICONS
+  }
+  </style>
+</head>
+
+
+<body>
+  <!-- REQUIRED VIEWPORT-FIT FOR IPHONE X -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <div class="navbar-fixed">
+    <nav class="red">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">Shelter House</a>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="finder.html">Shelter Finder</a></li>
+          <li><a href="flashcards.html">Flashcard</a></li>
+          <li><a href="videos.html">Videos</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <ul class="sidenav" id="nav-mobile">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="finder.html">Shelter Finder</a></li>
+    <li><a href="flashcards.html">Flashcard</a></li>
+    <li><a href="videos.html">Videos</a></li>
+  </ul>
+
+  <main>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card white">
+          <div class="card-content">
+            <span class="card-title">Cornerstone Shelter</span>
+            <div class="divider red"></div>
+            <div class="section">
+              <div class="row">
+                <div class="col s3">Emergency:</div>
+                <div class="col s3">12 units</div>
+                <div class="col s3">Transitional:</div>
+                <div class="col s3">25 units</div>
+              </div>
+              <div class="row">
+                <div class="col s3">Youth:</div>
+                <div class="col s3"><i class="material-icons red-text">check</i></div>
+                <div class="col s3">Family:</div>
+                <div class="col s3"><i class="material-icons red-text">check</i></div>
+              </div>
+              <div class="row">
+                <div class="col s3">Individual:</div>
+                <div class="col s3"><i class="material-icons red-text">close</i></div>
+                <div class="col s3">Gender Restriction:</div>
+                <div class="col s3"><i class="material-icons red-text">check</i></div>
+              </div>
+            </div>
+            <div class="divider red"></div>
+            <div class="section">
+              <p>68 N Fullerton Ave</p>
+              <p>Montclair, NJ 07042</p>
+            </div>
+            <div class="divider red"></div>
+            <div class="section">
+              <p>973-744-3312</p>
+            </div>
+            <div class="divider red"></div>
+            <div class="section">
+              <div class="row">
+                <div class="col s6">
+                  <button class="btn-flat" onclick="openMap('destination=68+N+Fullerton+07042')">
+                    <i class="material-icons left red-text">location_on</i>Directions
+                  </button>
+                </div>
+                <div class="col s6 right-align">
+                  <button class="btn-flat" onclick="callNumber('9737443312')">
+                    <i class="material-icons left red-text">call</i>Call
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card white">
+          <div class="card-content">
+            <span class="card-title">Circle of Life</span>
+            <div class="divider red"></div>
+            <div class="section">
+              <div class="row">
+                <div class="col s3">Emergency:</div>
+                <div class="col s3">10 units</div>
+                <div class="col s3">Transitional:</div>
+                <div class="col s3">0 units</div>
+              </div>
+              <div class="row">
+                <div class="col s3">Youth:</div>
+                <div class="col s3"><i class="material-icons red-text">close</i></div>
+                <div class="col s3">Family:</div>
+                <div class="col s3"><i class="material-icons red-text">close</i></div>
+              </div>
+              <div class="row">
+                <div class="col s3">Individual:</div>
+                <div class="col s3"><i class="material-icons red-text">check</i></div>
+                <div class="col s3">Gender Restriction:</div>
+                <div class="col s3"><i class="material-icons red-text">close</i></div>
+              </div>
+            </div>
+            <div class="divider red"></div>
+            <div class="section">
+              <p>55 Tillinghast St</p>
+              <p>Newark, NJ 07108</p>
+            </div>
+            <div class="divider red"></div>
+            <div class="section">
+              <p>862-763-4859</p>
+            </div>
+            <div class="divider red"></div>
+            <div class="section">
+              <div class="row">
+                <div class="col s6">
+                  <button class="btn-flat" onclick="openMap('destination=55+Tillinghast+07108')">
+                    <i class="material-icons left red-text">location_on</i>Directions
+                  </button>
+                </div>
+                <div class="col s6 right-align">
+                  <button class="btn-flat" onclick="callNumber('8627634859')">
+                    <i class="material-icons left red-text">call</i>Call
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card white">
+          <div class="card-content">
+            <span class="card-title">Belmont Home Special Services</span>
+            <div class="divider red"></div>
+            <div class="section">
+              <div class="row">
+                <div class="col s3">Emergency:</div>
+                <div class="col s3">0 units</div>
+                <div class="col s3">Transitional:</div>
+                <div class="col s3">10 units</div>
+              </div>
+              <div class="row">
+                <div class="col s3">Youth:</div>
+                <div class="col s3"><i class="material-icons red-text">check</i></div>
+                <div class="col s3">Family:</div>
+                <div class="col s3"><i class="material-icons red-text">check</i></div>
+              </div>
+              <div class="row">
+                <div class="col s3">Individual:</div>
+                <div class="col s3"><i class="material-icons red-text">check</i></div>
+                <div class="col s3">Gender Restriction:</div>
+                <div class="col s3"><i class="material-icons red-text">close</i></div>
+              </div>
+            </div>
+            <div class="divider red"></div>
+            <div class="section">
+              <p>790 Woodlane Rd</p>
+              <p>Westampton, NJ 08060</p>
+            </div>
+            <div class="divider red"></div>
+            <div class="section">
+              <p>609-518-7082</p>
+            </div>
+            <div class="divider red"></div>
+            <div class="section">
+              <div class="row">
+                <div class="col s6">
+                  <button class="btn-flat" onclick="openMap('destination=790+Woodlane+Rd+08060')">
+                    <i class="material-icons left red-text">location_on</i>Directions
+                  </button>
+                </div>
+                <div class="col s6 right-align">
+                  <button class="btn-flat" onclick="callNumber('6095187082')">
+                    <i class="material-icons left red-text">call</i>Call
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card white">
+          <div class="card-content">
+            <span class="card-title">Eva's Village</span>
+            <div class="divider red"></div>
+            <div class="section">
+              <div class="row">
+                <div class="col s3">Emergency:</div>
+                <div class="col s3">20 units</div>
+                <div class="col s3">Transitional:</div>
+                <div class="col s3">0 units</div>
+              </div>
+              <div class="row">
+                <div class="col s3">Youth:</div>
+                <div class="col s3"><i class="material-icons red-text">check</i></div>
+                <div class="col s3">Family:</div>
+                <div class="col s3"><i class="material-icons red-text">check</i></div>
+              </div>
+              <div class="row">
+                <div class="col s3">Individual:</div>
+                <div class="col s3"><i class="material-icons red-text">close</i></div>
+                <div class="col s3">Gender Restriction:</div>
+                <div class="col s3"><i class="material-icons red-text">check</i></div>
+              </div>
+            </div>
+            <div class="divider red"></div>
+            <div class="section">
+              <p>68 N Fullerton Ave</p>
+              <p>Montclair, NJ 07042</p>
+            </div>
+            <div class="divider red"></div>
+            <div class="section">
+              <p>973-742-2302</p>
+            </div>
+            <div class="divider red"></div>
+            <div class="section">
+              <div class="row">
+                <div class="col s6">
+                  <button class="btn-flat" onclick="openMap('destination=25+Jackson+07501')">
+                    <i class="material-icons left red-text">location_on</i>Directions
+                  </button>
+                </div>
+                <div class="col s6 right-align">
+                  <button class="btn-flat" onclick="callNumber('9737422302')">
+                    <i class="material-icons left red-text">call</i>Call
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="footer-fixed">
+    <footer>
+      <nav class="z-depth-0 red">
+        <div class="nav-wrapper">
+          <ul class="justify">
+            <li><a href="home.html"><i class="material-icons">home</i></a></li>
+            <li><a class="active" href="finder.html"><i class="material-icons">search</i></a></li>
+            <li><a href="flashcards.html"><i class="material-icons">library_books</i></a></li>
+            <li><a href="videos.html"><i class="material-icons">video_library</i></a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+  </div>
+
+
+  <!-- Compiled and minified jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+
+    });
+  </script>
+  <script id="rendered-js" >
+    $(document).ready(function () {
+      // TABS
+      $('ul.tabs').tabs();
+    });
+    //# sourceURL=pen.js
+  </script>
+  <script>
+    function openMap(val){
+      if ( /* if we're on iOS, open in Apple Maps */
+        navigator.platform.indexOf("iPhone") != -1 ||
+        navigator.platform.indexOf("iPod") != -1 ||
+        navigator.platform.indexOf("iPad") != -1) {
+        //val = 'maps://maps.google.com/maps/dir/?api=1&' + val + '&dir_action=navigate';
+        val = 'https://www.google.com/maps/dir/?api=1&' + val + '&dir_action=navigate';
+        window.open(val);
+      }
+      else {
+        /* else use Google */
+        val = 'https://www.google.com/maps/dir/?api=1&' + val + '&dir_action=navigate';
+        window.open(val);
+      }
+    }
+    function callNumber(val){
+        val = 'tel:' + val;
+        window.open(val);
+
+    }
+  </script>
+</body>
+</html>
